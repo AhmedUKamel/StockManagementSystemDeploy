@@ -129,7 +129,7 @@
                             <div class="form-row mb-4">
                                 <div class="form-group col-md-6">
                                     <label for="writer">كاتب الشطب</label>
-                                    <input th:value="${currentApplicationUser.nameArabic}" type="text" class="form-control" id="writer"
+                                    <input th:value="${currentUser.nameArabic}" type="text" class="form-control" id="writer"
                                            disabled>
                                 </div>
                                 <div class="form-group col-md-6">
@@ -147,7 +147,7 @@
                                     <div class="custom-control custom-checkbox checkbox-info">
                                         <input type="checkbox" class="custom-control-input" id="gridCheck" required>
                                         <label class="custom-control-label" for="gridCheck"
-                                               th:text="'أقر انا ' + ${currentApplicationUser.nameArabic} + ' بأن جميع البيانات المدرجة صحيحة وغير قابلة للتعديل'"></label>
+                                               th:text="'أقر انا ' + ${currentUser.nameArabic} + ' بأن جميع البيانات المدرجة صحيحة وغير قابلة للتعديل'"></label>
                                     </div>
                                 </div>
                             </div>

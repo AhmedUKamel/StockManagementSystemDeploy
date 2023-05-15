@@ -57,14 +57,14 @@
             <li class="nav-item dropdown applicationUser-profile-dropdown  order-lg-0 order-1">
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle applicationUser" id="userProfileDropdown"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img th:src="${currentApplicationUser.imageUrl}" alt="admin-profile" class="img-fluid">
+                    <img th:src="${currentUser.imageUrl}" alt="admin-profile" class="img-fluid">
                 </a>
                 <div class="dropdown-menu position-absolute animated fadeInUp" aria-labelledby="userProfileDropdown">
                     <div class="applicationUser-profile-section">
                         <div class="media mx-auto">
-                            <img th:src="${currentApplicationUser.imageUrl}" class="img-fluid mr-2" alt="avatar">
+                            <img th:src="${currentUser.imageUrl}" class="img-fluid mr-2" alt="avatar">
                             <div class="media-body">
-                                <h5 th:text="${currentApplicationUser.nameArabic}"></h5>
+                                <h5 th:text="${currentUser.nameArabic}"></h5>
                             </div>
                         </div>
                     </div>

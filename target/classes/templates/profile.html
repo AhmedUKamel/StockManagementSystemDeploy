@@ -5,7 +5,7 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="master_layout">
 <head>
-    <title th:text="${currentApplicationUser.nameEnglish}"></title>
+    <title th:text="${currentUser.nameEnglish}"></title>
 </head>
 <body class="sidebar-noneoverflow">
 <div layout:fragment="content">
@@ -34,16 +34,16 @@
                             </a>
                         </div>
                         <div class="text-center applicationUser-info">
-                            <img th:src="${currentApplicationUser.imageUrl}" alt="avatar" width="200px" height="200px">
-                            <p class="" th:text="${currentApplicationUser.nameArabic}"></p>
+                            <img th:src="${currentUser.imageUrl}" alt="avatar" width="200px" height="200px">
+                            <p class="" th:text="${currentUser.nameArabic}"></p>
                         </div>
                         <div class="applicationUser-info-list">
                             <div class="">
                                 <ul class="contacts-block list-unstyled">
-                                    <li class="contacts-block__item" th:text="${currentApplicationUser.nameEnglish}"></li>
-                                    <li class="contacts-block__item" th:text="${currentApplicationUser.email}"></li>
-                                    <li class="contacts-block__item" th:text="${currentApplicationUser.id}"></li>
-                                    <li class="contacts-block__item" th:text="${currentApplicationUser.phone}"></li>
+                                    <li class="contacts-block__item" th:text="${currentUser.nameEnglish}"></li>
+                                    <li class="contacts-block__item" th:text="${currentUser.email}"></li>
+                                    <li class="contacts-block__item" th:text="${currentUser.id}"></li>
+                                    <li class="contacts-block__item" th:text="${currentUser.phone}"></li>
                                 </ul>
                             </div>
                         </div>

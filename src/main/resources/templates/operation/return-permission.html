@@ -75,7 +75,7 @@
                                 </table>
                             </div>
                             <div class="form-row mb-4">
-                                <label for="zero-config1" th:text="'الأصناف المتاحة لدي ' + ${applicationUser.nameArabic}"></label>
+                                <label for="zero-config1" th:text="'الأصناف المتاحة لدي ' + ${currentUser.nameArabic}"></label>
                                 <table id="zero-config1" class="table table-hover" style="width:100%">
                                     <thead>
                                     <tr>
@@ -113,7 +113,7 @@
                             <div class="form-row mb-4">
                                 <div class="form-group col-md-6">
                                     <label for="from">من</label>
-                                    <input th:value="${applicationUser.nameArabic}" type="text" class="form-control" id="from" disabled>
+                                    <input th:value="${currentUser.nameArabic}" type="text" class="form-control" id="from" disabled>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="to">الي</label>
@@ -123,7 +123,7 @@
                             <div class="form-row mb-4">
                                 <div class="form-group col-md-6">
                                     <label for="writer">كاتب الشطب</label>
-                                    <input th:value="${currentApplicationUser.nameArabic}" type="text" class="form-control" id="writer" disabled>
+                                    <input th:value="${currentUser.nameArabic}" type="text" class="form-control" id="writer" disabled>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="admin">أمين المخزن</label>
@@ -139,7 +139,7 @@
                                     <div class="custom-control custom-checkbox checkbox-info">
                                         <input type="checkbox" class="custom-control-input" id="gridCheck" required>
                                         <label class="custom-control-label" for="gridCheck"
-                                               th:text="'أقر انا ' + ${currentApplicationUser.nameArabic} + ' بأن جميع البيانات المدرجة صحيحة وغير قابلة للتعديل'"></label>
+                                               th:text="'أقر انا ' + ${currentUser.nameArabic} + ' بأن جميع البيانات المدرجة صحيحة وغير قابلة للتعديل'"></label>
                                     </div>
                                 </div>
                             </div>
