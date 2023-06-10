@@ -1,6 +1,9 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.controller;
 
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.*;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ApplicationUser;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ItemStatus;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.Stock;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.Type;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.entities.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;

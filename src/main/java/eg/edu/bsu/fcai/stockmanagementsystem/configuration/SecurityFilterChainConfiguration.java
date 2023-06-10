@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
@@ -17,29 +18,30 @@ public class SecurityFilterChainConfiguration {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf().disable()
-                .authorizeHttpRequests()
-                    .requestMatchers("/assets/**", "/bootstrap/**", "/plugins/**", "/register/**", "/init").permitAll()
-                    .anyRequest().authenticated()
-                .and()
-                .formLogin()
-                    .loginPage("/login").permitAll()
-                    .defaultSuccessUrl("/", true)
-                    .usernameParameter("username")
-                    .passwordParameter("password")
-                .and()
-                    .rememberMe()
-                    .tokenValiditySeconds((int) TimeUnit.DAYS.toSeconds(15))
-                    .key("Something which is very very Secret")
-                    .rememberMeParameter("remember-me")
-                .and()
-                .logout()
-                    .logoutUrl("/logout")
-                    .logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))
-                    .clearAuthentication(true)
-                    .invalidateHttpSession(true)
-                    .deleteCookies("JSESSIONID", "remember-me")
-                    .logoutSuccessUrl("/login");
+                .csrf(AbstractHttpConfigurer::disable)
+                .authorizeHttpRequests(auth -> auth
+                        .requestMatchers("/assets/**", "/bootstrap/**", "/plugins/**", "/register/**", "/init").permitAll()
+                        .anyRequest().authenticated()
+                )
+                .formLogin(form -> form
+                        .loginPage("/login").permitAll()
+                        .defaultSuccessUrl("/", true)
+                        .usernameParameter("username")
+                        .passwordParameter("password")
+                )
+                .rememberMe(remember -> remember
+                        .tokenValiditySeconds((int) TimeUnit.DAYS.toSeconds(15))
+                        .key("Something which is very very Secret")
+                        .rememberMeParameter("remember-me")
+                )
+                .logout(logout -> logout
+                        .logoutUrl("/logout")
+                        .logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))
+                        .clearAuthentication(true)
+                        .invalidateHttpSession(true)
+                        .deleteCookies("JSESSIONID", "remember-me")
+                        .logoutSuccessUrl("/login")
+                );
         return http.build();
     }
 }

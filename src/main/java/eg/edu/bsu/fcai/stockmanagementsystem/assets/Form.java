@@ -1,7 +1,7 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.assets;
 
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.ItemStatus;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.Product;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ItemStatus;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.Product;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

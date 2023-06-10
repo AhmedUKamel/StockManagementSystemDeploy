@@ -40,7 +40,8 @@
                                 <td th:text="${applicationUser.email}"></td>
                                 <td th:text="${applicationUser.phone}" class="text-center"></td>
                                 <td class="text-center">
-                                    <a th:href="@{/users/{id}(id=${applicationUser.id})}" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="تعديل">
+                                    <a th:href="@{/users/{id}(id=${applicationUser.id})}" class="bs-tooltip"
+                                       data-toggle="tooltip" data-placement="top" title="" data-original-title="تعديل">
                                         <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.3"
@@ -53,7 +54,9 @@
                                                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </a>
-                                    <a th:href="@{/users/usage/{id}(id=${applicationUser.id})}" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="الأستهلاك">
+                                    <a th:href="@{/users/usage/{id}(id=${applicationUser.id})}" class="bs-tooltip"
+                                       data-toggle="tooltip" data-placement="top" title=""
+                                       data-original-title="الأستهلاك">
                                         <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.3"
@@ -67,7 +70,8 @@
                                                   stroke="#323232" stroke-width="1.5"/>
                                         </svg>
                                     </a>
-                                    <a th:href="@{/users/delete/{id}(id=${applicationUser.id})}" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="حذف">
+                                    <a th:href="@{/users/delete/{id}(id=${applicationUser.id})}" class="bs-tooltip"
+                                       data-toggle="tooltip" data-placement="top" title="" data-original-title="حذف">
                                         <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.3"
@@ -79,7 +83,9 @@
                                                   stroke="#323232" stroke-width="1.5"/>
                                         </svg>
                                     </a>
-                                    <a th:if="${applicationUser.enabled}" th:href="@{/users/disable/{id}(id=${applicationUser.id})}" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="تعطيل">
+                                    <a th:if="${applicationUser.enabled}"
+                                       th:href="@{/users/disable/{id}(id=${applicationUser.id})}" class="bs-tooltip"
+                                       data-toggle="tooltip" data-placement="top" title="" data-original-title="تعطيل">
                                         <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.3"
@@ -101,8 +107,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="layout-px-spacing">
+
         <div class="page-header">
             <div class="page-title">
                 <h3>عرض المستخدمين المعطلين</h3>
@@ -132,7 +137,8 @@
                                 <td th:text="${applicationUser.email}"></td>
                                 <td th:text="${applicationUser.phone}" class="text-center"></td>
                                 <td class="text-center">
-                                    <a th:href="@{/users/{id}(id=${applicationUser.id})}" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="تعديل">
+                                    <a th:href="@{/users/{id}(id=${applicationUser.id})}" class="bs-tooltip"
+                                       data-toggle="tooltip" data-placement="top" title="" data-original-title="تعديل">
                                         <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.3"
@@ -145,7 +151,9 @@
                                                   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </a>
-                                    <a th:href="@{/users/usage/{id}(id=${applicationUser.id})}" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="الأستهلاك">
+                                    <a th:href="@{/users/usage/{id}(id=${applicationUser.id})}" class="bs-tooltip"
+                                       data-toggle="tooltip" data-placement="top" title=""
+                                       data-original-title="الأستهلاك">
                                         <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.3"
@@ -159,7 +167,8 @@
                                                   stroke="#323232" stroke-width="1.5"/>
                                         </svg>
                                     </a>
-                                    <a th:href="@{/users/delete/{id}(id=${applicationUser.id})}" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="حذف">
+                                    <a th:href="@{/users/delete/{id}(id=${applicationUser.id})}" class="bs-tooltip"
+                                       data-toggle="tooltip" data-placement="top" title="" data-original-title="حذف">
                                         <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.3"
@@ -171,7 +180,9 @@
                                                   stroke="#323232" stroke-width="1.5"/>
                                         </svg>
                                     </a>
-                                    <a th:if="${!applicationUser.enabled}" th:href="@{/users/enable/{id}(id=${applicationUser.id})}" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="تفعيل">
+                                    <a th:if="${!applicationUser.enabled}"
+                                       th:href="@{/users/enable/{id}(id=${applicationUser.id})}" class="bs-tooltip"
+                                       data-toggle="tooltip" data-placement="top" title="" data-original-title="تفعيل">
                                         <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <path opacity="0.3"

@@ -1,13 +1,13 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.controller;
 
 import eg.edu.bsu.fcai.stockmanagementsystem.assets.DetailsParent;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.ApplicationUser;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.consumed.ConsumedGetPermission;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.consumed.ConsumedPutPermission;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.main.MainPutPermission;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.old.OldGetPermission;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.main.MainGetPermission;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.old.OldPutPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ApplicationUser;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ConsumedGetPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ConsumedPutPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.MainPutPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.OldGetPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.MainGetPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.OldPutPermission;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.cosumed.ConsumedGetDetailsService;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.cosumed.ConsumedGetPermissionsService;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.cosumed.ConsumedPutDetailsService;
@@ -65,7 +65,7 @@ public class GeneralDetailsController extends DetailsParent {
         model.addAttribute("mainPuts", mainPutDetailsService.findByPermission(permission));
         model.addAttribute("mainPutPermission", permission);
         model.addAttribute("currentUser", getPrincipal());
-        return "/details";
+        return "details";
 
     }
 
@@ -76,7 +76,7 @@ public class GeneralDetailsController extends DetailsParent {
         model.addAttribute("mainPuts", consumedPutDetailsService.findAllByPermission(permission));
         model.addAttribute("mainPutPermission", permission);
         model.addAttribute("currentUser", getPrincipal());
-        return "/details";
+        return "details";
     }
 
     @GetMapping(value = "/main/get/{id}")
@@ -96,7 +96,7 @@ public class GeneralDetailsController extends DetailsParent {
         model.addAttribute("mainGets", consumedGetDetailsService.findAllByPermission(permission));
         model.addAttribute("mainGetPermission", permission);
         model.addAttribute("currentUser", getPrincipal());
-        return "/details";
+        return "details";
     }
 
     @GetMapping(value = "/old/get/{id}")
@@ -106,7 +106,7 @@ public class GeneralDetailsController extends DetailsParent {
         model.addAttribute("oldGetPermission", permission);
         model.addAttribute("isExtraction", true);
         model.addAttribute("currentUser", getPrincipal());
-        return "/details";
+        return "details";
     }
 
     @GetMapping(value = "/main/return/{id}")
@@ -116,7 +116,7 @@ public class GeneralDetailsController extends DetailsParent {
         model.addAttribute("mainReturns", mainPutDetailsService.findByPermission(permission));
         model.addAttribute("mainReturnPermission", permission);
         model.addAttribute("currentUser", getPrincipal());
-        return "/details";
+        return "details";
     }
 
     @GetMapping(value = "/old/return/{id}")
@@ -126,7 +126,7 @@ public class GeneralDetailsController extends DetailsParent {
         model.addAttribute("mainReturns", oldPutDetailsService.findByPermission(permission));
         model.addAttribute("mainReturnPermission", permission);
         model.addAttribute("currentUser", getPrincipal());
-        return "/details";
+        return "details";
     }
 
     private ApplicationUser getPrincipal() {

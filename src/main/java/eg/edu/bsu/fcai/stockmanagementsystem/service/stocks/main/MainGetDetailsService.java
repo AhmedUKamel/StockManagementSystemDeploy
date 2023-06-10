@@ -1,9 +1,9 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.main;
 
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.ApplicationUser;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.main.MainGetDetails;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.main.MainGetPermission;
-import eg.edu.bsu.fcai.stockmanagementsystem.repository.stocks.main.MainGetDetailsRepository;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ApplicationUser;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.MainGetDetails;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.MainGetPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.repository.MainGetDetailsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

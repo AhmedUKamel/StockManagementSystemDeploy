@@ -1,7 +1,7 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.controller;
 
 import eg.edu.bsu.fcai.stockmanagementsystem.assets.UserForm;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.ApplicationUser;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ApplicationUser;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.HistoryService;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.UpdateUserService;
 import lombok.RequiredArgsConstructor;
@@ -25,7 +25,7 @@ public class ProfileController {
     @GetMapping
     public String getUserProfilePage(Model model) {
         model.addAttribute("currentUser", getPrincipal());
-        return "/profile";
+        return "profile";
     }
 
     private ApplicationUser getPrincipal() {
@@ -38,7 +38,7 @@ public class ProfileController {
         model.addAttribute("currentUser", applicationUser);
         model.addAttribute("user", applicationUser);
         model.addAttribute("action", "/profile/edit");
-        return "/profile-edit";
+        return "profile-edit";
     }
 
     @PostMapping("edit")
@@ -57,6 +57,6 @@ public class ProfileController {
         ApplicationUser applicationUser = getPrincipal();
         historyService.getHistoryForUser(model, applicationUser);
         model.addAttribute("currentUser", applicationUser);
-        return "/history";
+        return "history";
     }
 }

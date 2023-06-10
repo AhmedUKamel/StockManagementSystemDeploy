@@ -19,7 +19,7 @@
 
             <div class=" col-sm-12 layout-top-spacing">
 
-                <div class="applicationUser-profile layout-spacing">
+                <div class="user-profile layout-spacing">
                     <div class="widget-content widget-content-area">
                         <div class="d-flex justify-content-between">
                             <h3 class="">تفاصيل الحساب</h3>
@@ -33,11 +33,11 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="text-center applicationUser-info">
+                        <div class="text-center user-info">
                             <img th:src="${currentUser.imageUrl}" alt="avatar" width="200px" height="200px">
                             <p class="" th:text="${currentUser.nameArabic}"></p>
                         </div>
-                        <div class="applicationUser-info-list">
+                        <div class="user-info-list">
                             <div class="">
                                 <ul class="contacts-block list-unstyled">
                                     <li class="contacts-block__item" th:text="${currentUser.nameEnglish}"></li>

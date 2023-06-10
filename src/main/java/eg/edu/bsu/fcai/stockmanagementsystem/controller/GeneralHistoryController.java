@@ -1,6 +1,6 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.controller;
 
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.ApplicationUser;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ApplicationUser;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.HistoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -22,7 +22,7 @@ public class GeneralHistoryController {
         model.addAttribute("isMainPut", true);
         model.addAttribute("currentUser", getPrincipal());
         historyService.getMainStockPuts(model);
-        return "/permission-history-view";
+        return "permission-history-view";
     }
 
     @GetMapping(value = "/put/consumed")
@@ -30,7 +30,7 @@ public class GeneralHistoryController {
         model.addAttribute("isConsumedPut", true);
         model.addAttribute("currentUser", getPrincipal());
         historyService.getConsumedStockPuts(model);
-        return "/permission-history-view";
+        return "permission-history-view";
     }
 
     @GetMapping(value = "/get/main")
@@ -38,7 +38,7 @@ public class GeneralHistoryController {
         model.addAttribute("isMainGet", true);
         model.addAttribute("currentUser", getPrincipal());
         historyService.getMainStockGets(model);
-        return "/permission-history-view";
+        return "permission-history-view";
     }
 
     @GetMapping(value = "/get/consumed")
@@ -46,7 +46,7 @@ public class GeneralHistoryController {
         model.addAttribute("isConsumedGet", true);
         model.addAttribute("currentUser", getPrincipal());
         historyService.getConsumedStockGets(model);
-        return "/permission-history-view";
+        return "permission-history-view";
     }
 
     @GetMapping(value = "/get/old")
@@ -54,7 +54,7 @@ public class GeneralHistoryController {
         model.addAttribute("isOldGet", true);
         model.addAttribute("currentUser", getPrincipal());
         historyService.getOldExtractions(model);
-        return "/permission-history-view";
+        return "permission-history-view";
     }
 
     @GetMapping(value = "/return/main")
@@ -62,7 +62,7 @@ public class GeneralHistoryController {
         model.addAttribute("isMainReturn", true);
         model.addAttribute("currentUser", getPrincipal());
         historyService.getMainStockReturns(model);
-        return "/permission-history-view";
+        return "permission-history-view";
     }
 
     @GetMapping(value = "/return/old")
@@ -70,7 +70,7 @@ public class GeneralHistoryController {
         model.addAttribute("isOldReturn", true);
         model.addAttribute("currentUser", getPrincipal());
         historyService.getOldStockReturns(model);
-        return "/permission-history-view";
+        return "permission-history-view";
     }
 
     private ApplicationUser getPrincipal() {

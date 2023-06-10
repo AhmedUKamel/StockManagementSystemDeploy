@@ -1,12 +1,12 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.main;
 
 import eg.edu.bsu.fcai.stockmanagementsystem.assets.StockVolume;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.ApplicationUser;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.Product;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.main.MainGetItems;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.main.MainGetPermission;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.main.MainPutItems;
-import eg.edu.bsu.fcai.stockmanagementsystem.repository.stocks.main.MainGetItemsRepository;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ApplicationUser;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.Product;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.MainGetItems;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.MainGetPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.MainPutItems;
+import eg.edu.bsu.fcai.stockmanagementsystem.repository.MainGetItemsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

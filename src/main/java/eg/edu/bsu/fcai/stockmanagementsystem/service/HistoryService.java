@@ -1,12 +1,12 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.service;
 
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.ApplicationUser;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.consumed.ConsumedGetDetails;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.consumed.ConsumedPutDetails;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.main.MainGetDetails;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.main.MainPutDetails;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.old.OldGetDetails;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.old.OldPutDetails;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ApplicationUser;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ConsumedGetDetails;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ConsumedPutDetails;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.MainGetDetails;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.MainPutDetails;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.OldGetDetails;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.OldPutDetails;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.cosumed.ConsumedGetDetailsService;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.cosumed.ConsumedPutDetailsService;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.main.MainGetDetailsService;

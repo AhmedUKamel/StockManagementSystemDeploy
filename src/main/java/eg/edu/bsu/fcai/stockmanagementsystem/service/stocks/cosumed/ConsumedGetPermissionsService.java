@@ -1,7 +1,7 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.cosumed;
 
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.consumed.ConsumedGetPermission;
-import eg.edu.bsu.fcai.stockmanagementsystem.repository.stocks.consumed.ConsumedGetPermissionsRepository;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ConsumedGetPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.repository.ConsumedGetPermissionsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

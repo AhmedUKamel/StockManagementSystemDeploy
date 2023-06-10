@@ -1,9 +1,9 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.cosumed;
 
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.ApplicationUser;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.consumed.ConsumedPutDetails;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.consumed.ConsumedPutPermission;
-import eg.edu.bsu.fcai.stockmanagementsystem.repository.stocks.consumed.ConsumedPutDetailsRepository;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ApplicationUser;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ConsumedPutDetails;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ConsumedPutPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.repository.ConsumedPutDetailsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

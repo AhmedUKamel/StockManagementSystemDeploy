@@ -1,7 +1,7 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.service.entities;
 
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.ItemStatus;
-import eg.edu.bsu.fcai.stockmanagementsystem.repository.entities.ItemStatusRepository;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ItemStatus;
+import eg.edu.bsu.fcai.stockmanagementsystem.repository.ItemStatusRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

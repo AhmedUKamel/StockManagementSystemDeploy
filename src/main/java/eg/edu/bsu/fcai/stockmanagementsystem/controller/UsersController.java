@@ -3,8 +3,8 @@ package eg.edu.bsu.fcai.stockmanagementsystem.controller;
 import eg.edu.bsu.fcai.stockmanagementsystem.assets.Form;
 import eg.edu.bsu.fcai.stockmanagementsystem.assets.UserForm;
 import eg.edu.bsu.fcai.stockmanagementsystem.model.UserRole;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.ApplicationUser;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.Stock;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ApplicationUser;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.Stock;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.HistoryService;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.UpdateUserService;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.entities.StocksService;
@@ -37,7 +37,7 @@ public class UsersController {
         model.addAttribute("currentUser", getPrincipal());
         model.addAttribute("enabledUsers", userService.findAllEnabledUsers());
         model.addAttribute("disabledUsers", userService.findAllDisabledUsers());
-        return "/users";
+        return "users";
     }
 
     private ApplicationUser getPrincipal() {
@@ -49,7 +49,7 @@ public class UsersController {
         model.addAttribute("currentUser", getPrincipal());
         model.addAttribute("user", userService.findById(id));
         model.addAttribute("action", "/users");
-        return "/profile-edit";
+        return "profile-edit";
     }
 
     @PostMapping
@@ -95,7 +95,7 @@ public class UsersController {
     public String getUserUsage(@PathVariable(name = "id") String id, Model model) {
         historyService.getHistoryForUser(model, userService.findById(id));
         model.addAttribute("currentUser", getPrincipal());
-        return "/history";
+        return "history";
     }
 
     @GetMapping(value = "/set/admin")
@@ -103,7 +103,7 @@ public class UsersController {
         model.addAttribute("currentUser", getPrincipal());
         model.addAttribute("users", userService.findAll());
         model.addAttribute("stocks", stocksService.findAll());
-        return "/operation/set-stock-admin";
+        return "set-stock-admin";
     }
 
     @PostMapping(value = "/set/admin")
@@ -125,7 +125,7 @@ public class UsersController {
         model.addAttribute("currentUser", getPrincipal());
         model.addAttribute("users", userService.findAll());
         model.addAttribute("authorities", List.of(SUPER_ADMIN, ADMIN, USER, CONSUMER));
-        return "/operation/set-user-authority";
+        return "set-user-authority";
     }
 
     @GetMapping(value = "set")

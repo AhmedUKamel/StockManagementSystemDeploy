@@ -1,7 +1,7 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.old;
 
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.old.OldGetPermission;
-import eg.edu.bsu.fcai.stockmanagementsystem.repository.stocks.old.OldGetPermissionRepository;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.OldGetPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.repository.OldGetPermissionRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

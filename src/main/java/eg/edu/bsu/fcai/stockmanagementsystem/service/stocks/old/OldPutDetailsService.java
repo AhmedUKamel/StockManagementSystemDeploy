@@ -1,9 +1,9 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.old;
 
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.ApplicationUser;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.old.OldPutDetails;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.old.OldPutPermission;
-import eg.edu.bsu.fcai.stockmanagementsystem.repository.stocks.old.OldPutDetailsRepository;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ApplicationUser;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.OldPutDetails;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.OldPutPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.repository.OldPutDetailsRepository;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.entities.TypeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

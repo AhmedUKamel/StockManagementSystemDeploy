@@ -1,7 +1,7 @@
 package eg.edu.bsu.fcai.stockmanagementsystem.service.stocks.main;
 
-import eg.edu.bsu.fcai.stockmanagementsystem.model.stocks.main.MainPutPermission;
-import eg.edu.bsu.fcai.stockmanagementsystem.repository.stocks.main.MainPutPermissionRepository;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.MainPutPermission;
+import eg.edu.bsu.fcai.stockmanagementsystem.repository.MainPutPermissionRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

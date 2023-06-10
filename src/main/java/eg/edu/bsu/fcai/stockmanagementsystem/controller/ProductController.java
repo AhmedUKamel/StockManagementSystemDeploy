@@ -2,7 +2,7 @@ package eg.edu.bsu.fcai.stockmanagementsystem.controller;
 
 import eg.edu.bsu.fcai.stockmanagementsystem.assets.Form;
 import eg.edu.bsu.fcai.stockmanagementsystem.assets.FormService;
-import eg.edu.bsu.fcai.stockmanagementsystem.model.entities.ApplicationUser;
+import eg.edu.bsu.fcai.stockmanagementsystem.model.ApplicationUser;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.entities.ProductService;
 import eg.edu.bsu.fcai.stockmanagementsystem.service.entities.StocksService;
 import lombok.RequiredArgsConstructor;
