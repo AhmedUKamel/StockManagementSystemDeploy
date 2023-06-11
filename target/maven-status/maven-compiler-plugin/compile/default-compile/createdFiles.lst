@@ -16,7 +16,6 @@ eg\edu\bsu\fcai\stockmanagementsystem\repository\MainPutDetailsRepository.class
 eg\edu\bsu\fcai\stockmanagementsystem\model\Product$ProductBuilder.class
 eg\edu\bsu\fcai\stockmanagementsystem\repository\TypeRepository.class
 eg\edu\bsu\fcai\stockmanagementsystem\model\Stock$StockBuilder.class
-eg\edu\bsu\fcai\stockmanagementsystem\configuration\DataSourceConfiguration.class
 eg\edu\bsu\fcai\stockmanagementsystem\service\stocks\old\OldPutDetailsService.class
 eg\edu\bsu\fcai\stockmanagementsystem\assets\ExceptionsMessagesRepository.class
 eg\edu\bsu\fcai\stockmanagementsystem\controller\GeneralHistoryController.class
@@ -97,7 +96,6 @@ eg\edu\bsu\fcai\stockmanagementsystem\assets\LoginForm.class
 eg\edu\bsu\fcai\stockmanagementsystem\model\ConsumedPutDetails$ConsumedPutDetailsBuilder.class
 eg\edu\bsu\fcai\stockmanagementsystem\repository\OldPutPermissionsRepository.class
 eg\edu\bsu\fcai\stockmanagementsystem\repository\ConsumedPutDetailsRepository.class
-eg\edu\bsu\fcai\stockmanagementsystem\configuration\EntityManagerConfiguration.class
 eg\edu\bsu\fcai\stockmanagementsystem\model\ItemStatus$ItemStatusBuilder.class
 eg\edu\bsu\fcai\stockmanagementsystem\service\stocks\main\MainPutPermissionService.class
 eg\edu\bsu\fcai\stockmanagementsystem\model\MainGetItems.class
@@ -113,7 +111,6 @@ eg\edu\bsu\fcai\stockmanagementsystem\model\MainGetPermission$MainGetPermissionB
 eg\edu\bsu\fcai\stockmanagementsystem\assets\LoginForm$LoginFormBuilder.class
 eg\edu\bsu\fcai\stockmanagementsystem\model\ConsumedGetPermission$ConsumedGetPermissionBuilder.class
 eg\edu\bsu\fcai\stockmanagementsystem\model\OldGetPermission$OldGetPermissionBuilder.class
-eg\edu\bsu\fcai\stockmanagementsystem\configuration\JpaConfig.class
 eg\edu\bsu\fcai\stockmanagementsystem\repository\MainGetPermissionRepository.class
 eg\edu\bsu\fcai\stockmanagementsystem\controller\StocksController.class
 eg\edu\bsu\fcai\stockmanagementsystem\model\MainGetItems$MainGetItemsBuilder.class

@@ -5,7 +5,7 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="master_layout">
 <head>
-  <title th:text="'تعديل ' + ${currentUser.nameArabic}"></title>
+  <title th:text="'تعديل ' + ${user.nameArabic}"></title>
 </head>
 <body class="sidebar-noneoverflow">
 <div layout:fragment="content">
@@ -24,12 +24,12 @@
               <div class="form-row mb-4">
                 <div class="form-group col-md-6">
                   <label for="id">الرقم القومي</label>
-                  <input th:value="${currentUser.id}" type="text" class="form-control" id="id"
+                  <input th:value="${user.id}" type="text" class="form-control" id="id"
                          name="id" readonly required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="imageUrl">رابط الصورة الشخصية</label>
-                  <input th:value="${currentUser.imageUrl}" type="text" class="form-control"
+                  <input th:value="${user.imageUrl}" type="text" class="form-control"
                          id="imageUrl"
                          name="imageUrl">
                 </div>
@@ -37,24 +37,24 @@
               <div class="form-row mb-4">
                 <div class="form-group col-md-6">
                   <label for="nameArabic">الأسم بالعربي</label>
-                  <input th:value="${currentUser.nameArabic}"
+                  <input th:value="${user.nameArabic}"
                          type="text" class="form-control" id="nameArabic" name="nameArabic" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="nameEnglish">الأسم بالأنجليزي</label>
-                  <input th:value="${currentUser.nameEnglish}"
+                  <input th:value="${user.nameEnglish}"
                          type="text" class="form-control" id="nameEnglish" name="nameEnglish" required>
                 </div>
               </div>
               <div class="form-row mb-4">
                 <div class="form-group col-md-6">
                   <label for="email">البريد الأليكتروني</label>
-                  <input th:value="${currentUser.email}" type="email" class="form-control" id="email"
+                  <input th:value="${user.email}" type="email" class="form-control" id="email"
                          name="email" required>
                 </div>
                 <div class="form-group col-md-6">
                   <label for="phone">رقم الهاتف</label>
-                  <input th:value="${currentUser.phone}" type="text" class="form-control" id="phone"
+                  <input th:value="${user.phone}" type="text" class="form-control" id="phone"
                          name="phone" required>
                 </div>
               </div>

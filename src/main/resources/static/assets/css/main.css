@@ -176,8 +176,8 @@ span.red {
 /*      Form Group Label       */
 
 .form-group label, label {
-    font-size: 15px;
-    color: #acb0c3;
+    font-size: 18px;
+    color: black;
     letter-spacing: 1px;
 }
 
@@ -193,7 +193,7 @@ span.red {
     height: auto;
     border: 1px solid #bfc9d4;
     color: #3b3f5c;
-    font-size: 15px;
+    font-size: 16px;
     padding: 8px 10px;
     letter-spacing: 1px;
     height: calc(1.4em + 1.4rem + 2px);
@@ -408,7 +408,7 @@ select.form-control.form-custom {
 .btn {
     padding: 0.4375rem 1.25rem;
     text-shadow: none;
-    font-size: 14px;
+    font-size: 18px;
     color: #3b3f5c;
     font-weight: normal;
     white-space: normal;

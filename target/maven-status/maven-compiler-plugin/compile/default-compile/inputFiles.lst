@@ -8,7 +8,6 @@ C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\assets\LoginForm.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\service\stocks\main\MainPutItemsService.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\repository\OldGetPermissionRepository.java
-C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\configuration\JpaConfig.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\service\HistoryService.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\controller\StocksController.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\model\MainPutPermission.java
@@ -53,7 +52,6 @@ C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\repository\ConsumedPutItemsRepository.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\model\ConsumedGetDetails.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\controller\ExtractionPermissionController.java
-C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\configuration\DataSourceConfiguration.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\repository\OldPutDetailsRepository.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\repository\OldPutItemsRepository.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\repository\ConsumedPutPermissionsRepository.java
@@ -62,7 +60,6 @@ C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\repository\ConsumedGetItemsRepository.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\exception\InvalidUserDetailsException.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\assets\Validator.java
-C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\configuration\EntityManagerConfiguration.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\model\OldPutPermission.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\controller\HomeController.java
 C:\Users\ahmed\Desktop\StockManagementSystemDeploy\src\main\java\eg\edu\bsu\fcai\stockmanagementsystem\controller\PutPermissionController.java
