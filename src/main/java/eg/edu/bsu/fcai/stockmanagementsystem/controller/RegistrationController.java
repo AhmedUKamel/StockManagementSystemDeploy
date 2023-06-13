@@ -24,10 +24,17 @@ public class RegistrationController {
     public String register(@ModelAttribute UserForm form, Model model) {
         try {
             registrationService.register(form);
-            return "redirect:/login";
+            return "redirect:/registered";
         } catch (Exception e) {
             model.addAttribute("error", e.getMessage());
             return getRegisterPage(model, form);
         }
+    }
+
+    @GetMapping(value = "registered")
+    public String getRegisteredSuccessfullyPage(Model model) {
+        String registeredSuccessfullyMessage = "لقد قمت بتسجيل حسابك بنجاح،\n الرجاء أنتظار مراجعة بيانات حسابك وتفعيله من قبل المشرف قبل تسجيل الدخول.";
+        model.addAttribute("message", registeredSuccessfullyMessage);
+        return "registered";
     }
 }
